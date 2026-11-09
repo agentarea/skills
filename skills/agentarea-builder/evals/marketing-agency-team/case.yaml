@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: marketing-agency-team
+expected_outcome: |
+  Uses a catalog bundle (e.g. content-studio, design-bureau shape) as a starting point, proposes 2-4 roles with tools and their sources, wiring between them, a human approval before anything goes to clients, a weekly trigger, and stops for approval without building.

@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: vague-tender-monitor
+expected_outcome: |
+  Either asks at most 2-3 targeted questions (market/registry, what to look for, where to deliver) or proposes with stated assumptions; consults the catalog before proposing; builds nothing.

@@ -1,0 +1,38 @@
+{
+  "name": "agentarea",
+  "owner": {
+    "name": "AgentArea",
+    "url": "https://agentarea.ai"
+  },
+  "metadata": {
+    "description": "Use AgentArea from Claude Code: the AgentArea MCP server plus a skill that teaches Claude how to work with your workspace."
+  },
+  "plugins": [
+    {
+      "name": "agentarea",
+      "source": "./",
+      "strict": false,
+      "description": "AgentArea cloud (agentarea.ai): MCP server + the agentarea skill.",
+      "version": "0.1.0",
+      "homepage": "https://agentarea.ai",
+      "repository": "https://github.com/agentarea/skills",
+      "license": "Apache-2.0",
+      "keywords": [
+        "agentarea",
+        "agents",
+        "mcp",
+        "governance"
+      ],
+      "skills": [
+        "./skills/agentarea",
+        "./skills/agentarea-builder"
+      ],
+      "mcpServers": {
+        "agentarea": {
+          "type": "http",
+          "url": "https://api.agentarea.ai/mcp"
+        }
+      }
+    }
+  ]
+}
