@@ -25,3 +25,4 @@ A bundle installs a ready-made set (agents, MCP servers, skills, automations) in
 - Analyze/preview first and tell the user what will be created.
 - Installation is not transactional and has no uninstall — partial installs must be cleaned up by hand.
 - Automations and channels from a bundle install **disabled**; enable them deliberately after checking.
+- To keep your own workspace as a bundle (a folder in git, deployed and redeployed with `agentarea deploy`), use the `agentarea-bundle` skill.

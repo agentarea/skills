@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: small-business-to-bundle
+expected_outcome: |
+  Lists the workspace's existing connections and models before writing; writes a bundle folder with agentarea.yaml (name, schema_version 1, include globs), one folder per function with agents as .md files, the already-connected helpdesk and calendar as existing: true, an approval or deny policy for customer-facing writes, every schedule disabled; runs a dry run and stops before a real deploy, enabling anything or starting a run.

@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: add-agent-and-redeploy
+expected_outcome: |
+  Reads the existing bundle first; adds one agent file in the support function with a key unique in the bundle, wires it via delegates or its own tools, adds a policy so it cannot issue refunds itself, leaves schedules disabled, updates the README inventory; changes the workspace only through the folder (no agents_create/agents_update); dry-runs and checks the plan updates the existing bundle, then asks before deploying.

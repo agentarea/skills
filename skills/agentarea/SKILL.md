@@ -56,6 +56,8 @@ Report the outcome in one or two sentences plus anything the agent produced. Not
 
 **Automate.** Create the trigger disabled, fire it once to check the result, then enable it (`references/automation.md`).
 
+**Keep a setup in files.** When the user wants agents versioned in git, a whole workspace reproducible, or edits an `agentarea.yaml` / agent `.md` file, use the `agentarea-bundle` skill: a bundle folder deployed with `agentarea deploy`. In a workspace that is managed by a bundle, change things in its folder, not with the MCP write tools here. A hand edit is invisible to the folder and gets overwritten or orphaned by the next deploy.
+
 ## Act carefully — this touches a real company
 
 These rules exist because the actions are real: they spend money, change who can do what, or delete work other people rely on.

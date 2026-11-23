@@ -1,0 +1,5 @@
+name: customer-replies-approval
+subject: [intake]
+target: "tool:mcp:helpdesk:send_*"
+effect: approval
+message: A reply to a customer goes out only after a person approves it

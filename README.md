@@ -34,6 +34,7 @@ agentarea connect codex
 
 - [`skills/agentarea`](skills/agentarea/SKILL.md) — how AgentArea fits together, how to find your way around a workspace, core workflows, and which actions need your confirmation (anything destructive, privileged, or that spends money). Details live in `references/`.
 - [`skills/agentarea-builder`](skills/agentarea-builder/SKILL.md) — turns a need ("an agent that monitors tenders", "a small agency run by agents") into a concrete setup: finds what already exists in your workspace and the AgentArea catalog (bundles, preset agents, MCP servers, skills, built-in toolsets, event sources), proposes agents with each tool's source and the gaps named, and builds it once you agree. `scripts/catalog_search.py` searches the public catalog.
+- [`skills/agentarea-bundle`](skills/agentarea-bundle/SKILL.md) keeps a whole workspace in a versioned bundle folder: `agentarea.yaml`, one folder per function with agents as Markdown files, connections linked by name, policies and disabled schedules. It covers dry run, deploy and redeploy with the `agentarea` CLI, and linking agents across workspaces over A2A. `references/example/` is a complete small bundle.
 
 ## License
 
