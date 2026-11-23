@@ -93,7 +93,13 @@ Stop here and ask for a go-ahead. The proposal is the moment the user corrects c
 
 ## 4. Build
 
-Only after the user agrees, and in the workspace they confirmed (on an account-wide endpoint, ask which one). Follow the `agentarea` skill for each call; the order that avoids half-built setups:
+Only after the user agrees, and in the workspace they confirmed (on an account-wide endpoint, ask which one).
+
+**Pick the route first:**
+- **A bundle folder** (the `agentarea-bundle` skill) is the default when the user will keep the setup: versioned in git, repeatable, reviewable, deployable again or to another workspace, or anything bigger than one agent. You write the proposal down as files, run a dry run, deploy on the user's yes, and every later change goes through the folder. Hand over to that skill with the proposal as the spec; connectors you found already connected become `existing: true` entries.
+- **Individual MCP calls** (below) for a one-off: one agent to try something, a quick fix, a workspace the user doesn't want to manage as files. Say which route you're taking.
+
+For the MCP route, follow the `agentarea` skill for each call. The order that avoids half-built setups:
 
 1. Connectors: reuse existing instances; create new ones, and **verify** each — an unverified instance gives the agent no tools at all. OAuth and secrets go through the web app, not the chat.
 2. Skills: import or create, so their ids exist.

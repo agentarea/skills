@@ -1,0 +1,13 @@
+name: corner-bikes
+schema_version: 1
+display_name: Corner Bikes
+description: The shop's agents, one folder per function; connections in connections/
+setup:
+  model: {label: Model instance every agent runs on (its name or id), required: true}
+defaults:
+  model: ${setup.model}
+  limits: {monthly_usd: 20, run_usd: 1}
+agents:    {include: ./*/agents/*.md}
+mcp:       {include: ./*/mcp/*.yaml}
+policies:  {include: ./*/policies/*.yaml}
+schedules: {include: ./*/schedules/*.md}

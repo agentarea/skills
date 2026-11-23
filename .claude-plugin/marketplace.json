@@ -25,7 +25,8 @@
       ],
       "skills": [
         "./skills/agentarea",
-        "./skills/agentarea-builder"
+        "./skills/agentarea-builder",
+        "./skills/agentarea-bundle"
       ],
       "mcpServers": {
         "agentarea": {
